@@ -35,7 +35,7 @@ public class PaperVersionFetcher implements VersionFetcher {
     private static final Logger LOGGER = LogUtils.getClassLogger();
     private static final int DISTANCE_ERROR = -1;
     private static final int DISTANCE_UNKNOWN = -2;
-    private static final String DOWNLOAD_PAGE = "https://papermc.io/downloads/paper";
+    private static final String DOWNLOAD_PAGE = "https://github.com/Yur1nn/Scissor/releases";
 
     @Override
     public long getCacheTime() {
@@ -49,7 +49,7 @@ public class PaperVersionFetcher implements VersionFetcher {
         if (build.buildNumber().isEmpty() && build.gitCommit().isEmpty()) {
             updateMessage = text("You are running a development version without access to version information", color(0xFF5300));
         } else {
-            updateMessage = getUpdateStatusMessage("PaperMC/Paper", build);
+            updateMessage = getUpdateStatusMessage("Yur1nn/Scissor", build);
         }
         final @Nullable Component history = this.getHistory();
 
@@ -97,7 +97,7 @@ public class PaperVersionFetcher implements VersionFetcher {
                     .orElseThrow();
                 return latest - jenkinsBuild;
             } catch (final JsonSyntaxException ex) {
-                LOGGER.error("Error parsing json from Paper's downloads API", ex);
+                LOGGER.error("Error parsing json from version API", ex);
                 return DISTANCE_ERROR;
             }
         } catch (final IOException e) {

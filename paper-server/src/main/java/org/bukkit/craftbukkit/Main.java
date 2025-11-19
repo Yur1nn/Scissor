@@ -197,13 +197,13 @@ public class Main {
             }
 
             // Paper start - Improve java version check
-            boolean skip = Boolean.getBoolean("Paper.IgnoreJavaVersion");
+            boolean skip = Boolean.getBoolean("Scissor.IgnoreJavaVersion") || Boolean.getBoolean("Paper.IgnoreJavaVersion"); // Support both for compatibility
             String javaVersionName = System.getProperty("java.version");
             // J2SE SDK/JRE Version String Naming Convention
             boolean isPreRelease = javaVersionName.contains("-");
             if (isPreRelease) {
                 if (!skip) {
-                    System.err.println("Unsupported Java detected (" + javaVersionName + "). You are running an unsupported, non official, version. Only general availability versions of Java are supported. Please update your Java version. See https://docs.papermc.io/paper/faq#unsupported-java-detected-what-do-i-do for more information.");
+                    System.err.println("Unsupported Java detected (" + javaVersionName + "). You are running an unsupported, non official, version. Only general availability versions of Java are supported. Please update your Java version. See https://github.com/Yur1nn/Scissor for more information.");
                     return;
                 }
 
@@ -231,12 +231,12 @@ public class Main {
                     if (buildDate.before(deadline.getTime())) {
                         // Paper start - This is some stupid bullshit
                         System.err.println("*** Warning, you've not updated in a while! ***");
-                        System.err.println("*** Please download a new build from https://papermc.io/downloads/paper ***");
+                        System.err.println("*** Please download a new build from https://github.com/Yur1nn/Scissor/releases ***");
                         // Paper end
                     }
                 }
 
-                System.setProperty("library.jansi.version", "Paper"); // Paper - set meaningless jansi version to prevent git builds from crashing on Windows
+                System.setProperty("library.jansi.version", "Scissor"); // Scissor - set meaningless jansi version to prevent git builds from crashing on Windows
                 System.setProperty("jdk.console", "java.base"); // Paper - revert default console provider back to java.base so we can have our own jline
 
                 io.papermc.paper.PaperBootstrap.boot(options);

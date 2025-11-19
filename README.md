@@ -1,31 +1,42 @@
-Paper [![Paper Build Status](https://img.shields.io/github/actions/workflow/status/PaperMC/Paper/build.yml?branch=main)](https://github.com/PaperMC/Paper/actions)
-[![Discord](https://img.shields.io/discord/289587909051416579.svg?label=&logo=discord&logoColor=ffffff&color=7389D8&labelColor=6A7EC2)](https://discord.gg/papermc)
-[![GitHub Sponsors](https://img.shields.io/github/sponsors/papermc?label=GitHub%20Sponsors)](https://github.com/sponsors/PaperMC)
-[![Open Collective](https://img.shields.io/opencollective/all/papermc?label=OpenCollective%20Sponsors)](https://opencollective.com/papermc)
+Scissor
 ===========
 
-The most widely used, high-performance Minecraft server that aims to fix gameplay and mechanics inconsistencies.
+A high-performance Minecraft server fork of [Paper](https://github.com/PaperMC/Paper) that aims to improve and optimize the experience specifically for survival servers.
 
+## About Scissor
 
-**Support and Project Discussion:**
-- [Our forums](https://forums.papermc.io/) or [Discord](https://discord.gg/papermc)
+Scissor is a fork of Paper that focuses on enhancing gameplay mechanics, performance, and features tailored for survival server environments. While maintaining compatibility with Paper plugins and APIs, Scissor introduces optimizations and improvements that make survival gameplay more enjoyable and server administration easier.
 
-How To (Server Admins)
-------
-Paperclip is a jar file that you can download and run just like a normal jar file.
+### Key Focus Areas (Placeholder - Coming Soon)
 
-Download Paper from our [downloads page](https://papermc.io/downloads/paper).
+- **Survival Gameplay Enhancements**: Improved mechanics and features specifically designed for survival servers
+- **Performance Optimizations**: Better performance for survival-focused server workloads
+- **Quality of Life Improvements**: Enhancements that improve the overall survival experience
+- **Server Administration Tools**: Better tools and configurations for managing survival servers
 
-Run the Paperclip jar directly from your server. Just like old times
+**Note**: This project is in active development. Specific features and improvements will be documented as they are implemented.
 
-* Documentation on using Paper: [docs.papermc.io](https://docs.papermc.io)
-* For a sneak peek at upcoming features, [see here](https://github.com/PaperMC/Paper/projects)
+## Support and Project Discussion
 
-How To (Plugin Developers)
-------
-* See our API [here](paper-api)
-* See upcoming, pending, and recently added API [here](https://github.com/orgs/PaperMC/projects/2/views/4)
-* Paper API javadocs here: [papermc.io/javadocs](https://papermc.io/javadocs/)
+- [GitHub Issues](https://github.com/Yur1nn/Scissor/issues)
+- [GitHub Discussions](https://github.com/Yur1nn/Scissor/discussions)
+
+## How To (Server Admins)
+Scissor is a jar file that you can download and run just like a normal jar file.
+
+Download Scissor from the [releases page](https://github.com/Yur1nn/Scissor/releases).
+
+Run the Scissor jar directly from your server. Just like old times!
+
+* Documentation on using Scissor: *Coming soon*
+* For a sneak peek at upcoming features, [see here](https://github.com/Yur1nn/Scissor/projects)
+
+## How To (Plugin Developers)
+Scissor maintains full compatibility with Paper's API, so all Paper plugins should work without modification.
+
+* See the Paper API [here](paper-api)
+* Paper API javadocs: [papermc.io/javadocs](https://papermc.io/javadocs/)
+
 #### Repository (for paper-api)
 ##### Maven
 
@@ -44,6 +55,7 @@ How To (Plugin Developers)
     <scope>provided</scope>
 </dependency>
 ```
+
 ##### Gradle
 ```kotlin
 repositories {
@@ -61,40 +73,20 @@ java {
 }
 ```
 
-How To (Compiling Jar From Source)
-------
-To compile Paper, you need JDK 21 and an internet connection.
+## How To (Compiling Jar From Source)
+To compile Scissor, you need JDK 21 and an internet connection.
 
 Clone this repo, run `./gradlew applyPatches`, then `./gradlew createMojmapBundlerJar` from your terminal. You can find the compiled jar in the `paper-server/build/libs` directory.
 
 To get a full list of tasks, run `./gradlew tasks`.
 
-How To (Pull Request)
-------
-See [Contributing](CONTRIBUTING.md)
+## How To (Pull Request)
+See [Contributing](CONTRIBUTING.md) (if available)
 
-Old Versions (1.21.3 and below)
-------
-For branches of versions 1.8-1.21.3, please see our [archive repository](https://github.com/PaperMC/Paper-archive).
-
-Support Us
-------
-First of all, thank you for considering helping out, we really appreciate that!
-
-PaperMC has various recurring expenses, mostly related to infrastructure. Paper uses [Open Collective](https://opencollective.com/) via the [Open Source Collective fiscal host](https://opencollective.com/opensource) to manage expenses. Open Collective allows us to be extremely transparent, so you can always see how your donations are used. You can read more about financially supporting PaperMC [on our website](https://papermc.io/sponsors).
-
-You can find our collective [here](https://opencollective.com/papermc), or you can donate via GitHub Sponsors [here](https://github.com/sponsors/PaperMC), which will also go towards the collective.
+## Credits
+Scissor is a fork of [Paper](https://github.com/PaperMC/Paper), which is a fork of [Spigot](https://www.spigotmc.org/), which is a fork of [CraftBukkit](https://github.com/cbukkit/craftbukkit), which is a fork of [Minecraft Server](https://www.minecraft.net/).
 
 Special Thanks To:
 -------------
 
-[![YourKit-Logo](https://www.yourkit.com/images/yklogo.png)](https://www.yourkit.com/)
-
-[YourKit](https://www.yourkit.com/), makers of the outstanding java profiler, support open source projects of all kinds with their full featured [Java](https://www.yourkit.com/java/profiler) and [.NET](https://www.yourkit.com/.net/profiler) application profilers. We thank them for granting Paper an OSS license so that we can make our software the best it can be.
-
-[<img src="https://user-images.githubusercontent.com/21148213/121807008-8ffc6700-cc52-11eb-96a7-2f6f260f8fda.png" alt="" width="150">](https://www.jetbrains.com)
-
-[JetBrains](https://www.jetbrains.com/), creators of the IntelliJ IDEA, supports Paper with one of their [Open Source Licenses](https://www.jetbrains.com/opensource/). IntelliJ IDEA is the recommended IDE for working with Paper, and most of the Paper team uses it.
-
-All our sponsors!  
-[![Sponsor Image](https://raw.githubusercontent.com/PaperMC/papermc.io/data/sponsors.png)](https://papermc.io/sponsors)
+The [PaperMC team](https://github.com/PaperMC) for their excellent work on Paper, which this project is based on.

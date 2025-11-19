@@ -66,9 +66,9 @@ tasks.register("printMinecraftVersion") {
     }
 }
 
-tasks.register("printPaperVersion") {
-    val paperVersion = provider { project.version }
+tasks.register("printScissorVersion") {
+    val scissorVersion = provider { project.version }
     doLast {
-        println(paperVersion.get())
+        println(scissorVersion.get())
     }
 }

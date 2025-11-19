@@ -170,7 +170,6 @@ public class CraftPlayerProfile implements PlayerProfile, SharedPlayerProfile {
         return Iterables.getFirst(this.profile.properties().get(property), null);
     }
 
-    @Nullable
     @Override
     public void setProperty(@NotNull String propertyName, @Nullable Property property) {
         if (property != null) {
