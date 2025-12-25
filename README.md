@@ -51,7 +51,7 @@ Scissor maintains full compatibility with Paper's API, so all Paper plugins shou
 <dependency>
     <groupId>io.papermc.paper</groupId>
     <artifactId>paper-api</artifactId>
-    <version>1.21.10-R0.1-SNAPSHOT</version>
+    <version>1.21.11-R0.1-SNAPSHOT</version>
     <scope>provided</scope>
 </dependency>
 ```
@@ -65,7 +65,7 @@ repositories {
 }
 
 dependencies {
-    compileOnly("io.papermc.paper:paper-api:1.21.10-R0.1-SNAPSHOT")
+    compileOnly("io.papermc.paper:paper-api:1.21.11-R0.1-SNAPSHOT")
 }
 
 java {
