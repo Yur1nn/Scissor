@@ -1,0 +1,29 @@
+# Scissor
+
+A custom Minecraft server shell written in Rust.
+
+## Features
+- Loads static maps from WorldEdit `.schem`/`.schematic` files
+- Cross-platform: Windows & Linux
+- Core world control (time, PvP, block permissions, etc.)
+- Plugin-ready API (planned)
+- Switchable PvP mechanics (1.8/modern)
+- No world generation; always uses static schematic-based maps
+- Designed for lobbies, arenas, mini-games, and more
+
+## Project Structure
+- `src/main.rs`: Entry point
+- `src/schematic.rs`: Schematic loader and map management
+- `src/world.rs`: World control logic
+- `src/server.rs`: Server core, PvP mode, plugin API stub
+
+## Getting Started
+1. Install [Rust](https://www.rust-lang.org/tools/install)
+2. Build: `cargo build`
+3. Run: `cargo run`
+
+## Roadmap
+- Implement schematic parsing
+- Add networking and protocol support
+- Develop plugin API
+- Add configuration and admin commands
