@@ -10,6 +10,8 @@ A custom Minecraft server shell written in Rust.
 - Switchable PvP mechanics (1.8/modern)
 - No world generation; always uses static schematic-based maps
 - Designed for lobbies, arenas, mini-games, and more
+- Permission system: per-player permissions and build mode toggle
+- /buildmode command: enable/disable build mode for a player
 
 ## Project Structure
 - `src/main.rs`: Entry point

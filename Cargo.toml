@@ -13,6 +13,7 @@ thiserror = "1.0"
 parking_lot = "0.12"
 async-std = { version = "1.12", features = ["attributes"] }
 bytes = "1.5"
-# Add more dependencies as needed for networking, schematic parsing, etc.
 toml = "0.8"
 anyhow = "1.0"
+ahash = { version = "0.8", features = ["serde"] }
+chrono = "0.4"

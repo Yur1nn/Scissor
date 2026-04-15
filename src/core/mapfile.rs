@@ -2,7 +2,7 @@
 //! This format is designed for fast loading and saving, and is independent of Minecraft's NBT or schematic formats.
 
 
-use std::collections::HashMap;
+use ahash::AHashMap;
 use crate::core::block::{Block, SemiBlock};
 use crate::core::world_manager;
 use std::fs::File;
@@ -17,7 +17,7 @@ pub struct MapFile {
     pub width: u16,
     pub height: u16,
     pub length: u16,
-    pub blocks: HashMap<(i32, i32, i32), Block>,
+    pub blocks: AHashMap<(i32, i32, i32), Block>,
     pub semi_blocks: Vec<SemiBlock>,
 }
 
