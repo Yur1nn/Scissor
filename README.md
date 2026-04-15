@@ -13,9 +13,14 @@ A custom Minecraft server shell written in Rust.
 
 ## Project Structure
 - `src/main.rs`: Entry point
-- `src/schematic.rs`: Schematic loader and map management
 - `src/world.rs`: World control logic
 - `src/server.rs`: Server core, PvP mode, plugin API stub
+
+
+## Schematic Format Requirements
+- Only classic `.schematic` (NBT) files are supported.
+- Export your schematic using WorldEdit or MCEdit as `.schematic` (not `.schem`).
+- `.schem` (Sponge) format is **not supported yet**.
 
 ## Getting Started
 1. Install [Rust](https://www.rust-lang.org/tools/install)

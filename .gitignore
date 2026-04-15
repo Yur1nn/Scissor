@@ -17,3 +17,6 @@ Thumbs.db
 # Misc
 *.tmp
 *.swp
+*.schematic
+config.toml
+config.local.toml

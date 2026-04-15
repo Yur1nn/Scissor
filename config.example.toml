@@ -1,0 +1,4 @@
+# Example configuration for Scissor
+map_file = "example.schematic"
+world_name = "lobby"
+# Add more settings as needed

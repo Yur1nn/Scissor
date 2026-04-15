@@ -1,6 +1,7 @@
 //! World manager for handling multiple worlds
 
 use crate::core::block::{Block, SemiBlock};
+use crate::core::mapfile;
 use std::collections::HashMap;
 
 /// Represents a single world instance
@@ -17,6 +18,11 @@ impl World {
             blocks: HashMap::new(),
             semi_blocks: Vec::new(),
         }
+    }
+
+    /// Export this world to a MapFile (Scissor native format)
+    pub fn to_mapfile(&self, width: u16, height: u16, length: u16) -> mapfile::MapFile {
+        mapfile::MapFile::from_world(self, width, height, length)
     }
 }
 
